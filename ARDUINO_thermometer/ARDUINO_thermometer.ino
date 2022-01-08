@@ -1,4 +1,8 @@
 
+/*
+CODES OF PORTABLE TEMPERATURE AND HUMIDITY METER 
+KIVILCIM YILMAZ
+*/
 #include <FaBoLCD_PCF8574.h> //lcd çalışması için gerekli library
 #include <Wire.h> /*Arduino'nun I2C özelliği kullanılıyor bu nedenle bu library gerekli*/
 
