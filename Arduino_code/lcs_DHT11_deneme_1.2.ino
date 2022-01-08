@@ -15,7 +15,6 @@ FaBoLCD_PCF8574 lcd; //lcd ekran tanımlandı
 
 void setup() {
   pinMode(7,OUTPUT);
-  pinMode(8,OUTPUT);
   lcd.begin(16,2); //lcd 16 satır 2 sütundan oluşuyor bu satırda lcd başlatıldı
   lcd.print("   THERMOMETER");
   delay(1000); /* 1000 milisaniye boyunca bu yazı ekranda okunacak*/
@@ -49,19 +48,17 @@ if (temp>20){
   delay(3000);
   
   digitalWrite(7,HIGH);
-  digitalWrite(8,LOW);
-}
 if (hum<50){
   lcd.setCursor(0,1); 
   lcd.print("LOW   HUMIDITY! ");
   delay(3000);
   
   digitalWrite(7,HIGH);
-  digitalWrite(8,LOW);
+  
 }
 else {
 (7,LOW);
-(8,HIGH);
+
 
 
 
